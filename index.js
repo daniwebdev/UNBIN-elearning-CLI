@@ -36,12 +36,13 @@ status = false;
 var ps = prompt({ infinite: true, prompt: 'Command: >' });
 ps.on('value', function(value, options, ps) {
     // do something with value
+
     if (value == 'help') {
         var table_help = new Table({
             head: ['Perintah', 'Deskripsi', 'Contoh']
         });
         table_help.push(
-            ["username:password", "Untuk Login", "123456:pass1234"], ["help", "Bantuan/Menampilkan halaman ini", ""]
+            ["login username:password", "Untuk Login", "123456:pass1234"], ["help", "Bantuan/Menampilkan halaman ini", ""], ["schedule", "Menampilkan jadwal kuliah hari ini", ""],
         );
         console.log(table_help.toString());
 
@@ -88,7 +89,7 @@ function initial(auth) {
 }
 
 
-function login(username = '', password = 'Ajm62k53jEjaCBu') {
+function login(username = '', password = '') {
     // console.log([secure_login, cookie]);
 
     let path = '/login/doLogin';
