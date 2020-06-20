@@ -1,0 +1,19 @@
+{
+  "name": "STIKOM",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cli-input": "^0.2.0",
+    "cli-table": "^0.3.1",
+    "colors": "^1.4.0",
+    "request": "^2.88.2"
+  }
+}
